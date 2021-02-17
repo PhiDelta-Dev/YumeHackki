@@ -1,0 +1,9 @@
+.vs/*
+bin/*
+bin-int/*
+premake/*
+premake5.lua
+GenerateProject.bat
+*.user
+*.filters
+*.aps

@@ -5,7 +5,7 @@ namespace ui
 	void print_title()
 	{
 		PRINT(" --------------------");
-		PRINT(" | Yume Hackki v0.1 |  by PhiDelta");
+		PRINT(" | Yume Hackki v1.0 |  by PhiDelta");
 		PRINT(" --------------------\n");
 	}
 

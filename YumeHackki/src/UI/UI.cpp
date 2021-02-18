@@ -1,5 +1,8 @@
 #include "PCH.h"
 
+#define CH_D (char)0xB0
+#define CH_L (char)0xB2
+
 namespace ui
 {
 	void print_title()
@@ -60,14 +63,14 @@ namespace ui
 	void print_monoe()
 	{
 		PRINT(
-			(char)0xB0 << (char)0xB0 << (char)0xB0 << (char)0xB0 << (char)0xB0 << (char)0xB2 << (char)0xB0 << (char)0xB0 << '\n' <<
-			(char)0xB0 << (char)0xB0 << (char)0xB2 << (char)0xB0 << (char)0xB0 << (char)0xB2 << (char)0xB0 << (char)0xB0 << '\n' <<
-			(char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << '\n' <<
-			(char)0xB2 << (char)0xB0 << (char)0xB0 << (char)0xB2 << (char)0xB2 << (char)0xB0 << (char)0xB0 << (char)0xB2 << '\n' <<
-			(char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << '\n' <<
-			(char)0xB2 << (char)0xB2 << (char)0xB0 << (char)0xB2 << (char)0xB2 << (char)0xB0 << (char)0xB2 << (char)0xB2 << '\n' <<
-			' ' << (char)0xB2 << (char)0xB2 << (char)0xB0 << (char)0xB0 << (char)0xB2 << (char)0xB2 << ' ' << '\n' <<
-			' ' << ' ' << (char)0xB2 << (char)0xB2 << (char)0xB2 << (char)0xB2 << ' ' << ' '
+			CH_D << CH_D << CH_D << CH_D << CH_D << CH_L << CH_D << CH_D << '\n' <<
+			CH_D << CH_D << CH_L << CH_D << CH_D << CH_L << CH_D << CH_D << '\n' <<
+			CH_L << CH_L << CH_L << CH_L << CH_L << CH_L << CH_L << CH_L << '\n' <<
+			CH_L << CH_D << CH_D << CH_L << CH_L << CH_D << CH_D << CH_L << '\n' <<
+			CH_L << CH_L << CH_L << CH_L << CH_L << CH_L << CH_L << CH_L << '\n' <<
+			CH_L << CH_L << CH_D << CH_L << CH_L << CH_D << CH_L << CH_L << '\n' <<
+			' '  << CH_L << CH_L << CH_D << CH_D << CH_L << CH_L << ' '  << '\n' <<
+			' '  << ' '  << CH_L << CH_L << CH_L << CH_L
 		);
 	}
 }

@@ -53,4 +53,12 @@ namespace hacks
 
 		memory_editor::write_memory(ed, address, sizeof(buffer), &buffer[0]);
 	}
+
+	void set_rng_seed(MemoryEditor& ed, const ui32& seed)
+	{
+		ui32 offsets[] = { 0xCA008 };
+		ui32 buffer = seed;
+
+		memory_editor::write_memory_ptr(ed, offsets, sizeof(offsets) / 4, 4, &buffer);
+	}
 }

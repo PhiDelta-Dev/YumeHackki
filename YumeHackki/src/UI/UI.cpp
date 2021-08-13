@@ -25,6 +25,7 @@ namespace ui
 		case 3: PRINT("New movement speed:"); break;
 		case 4: PRINT("Noclip state [0 = disabled, 1 = enabled]:"); break;
 		case 5: PRINT("New map [map id or -1 to disable]:"); break;
+		case 6: PRINT("New rng seed [32bit]:"); break;
 		default: break;
 		}
 	}
@@ -39,7 +40,9 @@ namespace ui
 			"\n\t2: Set the y coordinate"
 			"\n\t3: Set the movement speed"
 			"\n\t4: Enable or disable noclip"
-			"\n\t5: Set the current map (requires a map refresh)");
+			"\n\t5: Set the current map (requires a map refresh)"
+			"\n\t6: Set the current rng seed"
+		);
 		app.MenuPage = 0;
 	}
 

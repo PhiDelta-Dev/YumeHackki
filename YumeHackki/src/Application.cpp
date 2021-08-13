@@ -41,6 +41,7 @@ namespace application
 		case MENU_HACK_SET_SPEED: hacks::set_speed(app.MemEditor, (ui32)input); break;
 		case MENU_HACK_SET_NOCLIP: hacks::set_noclip(app.MemEditor, (ui32)(input != 0)); break;
 		case MENU_HACK_SET_MAP: hacks::set_map(app.MemEditor, (ui32)input); break;
+		case MENU_HACK_SET_RNG_SEED: hacks::set_rng_seed(app.MemEditor, (ui32)input); break;
 		}
 
 		if (app.MenuPage > MENU_MAIN) { ui::clear_prompt(app); }

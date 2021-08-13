@@ -10,4 +10,4 @@ using si16 = signed short;
 using si32 = signed long;
 using si64 = signed long long;
 
-using f32 = float;
+using fp32 = float;
